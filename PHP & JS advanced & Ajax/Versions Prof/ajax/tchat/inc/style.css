@@ -1,0 +1,47 @@
+main{
+    min-height:calc(100vh - 159px);
+}
+
+.principal{
+    min-height:55vh;
+    max-height:55vh;
+}
+#formulaire_tchat .btn{
+    min-width:40%;
+}
+
+.avatar{
+    width:45px;
+}
+
+#message_tchat, #liste_membre_connecte{
+    overflow-y:auto;
+    overflow-x:none;
+}
+#liste_membre_connecte p{
+    padding-left:10px;
+}
+
+#message_tchat p{
+    margin:0;
+    position:relative;
+    cursor:pointer;
+}
+.cookies{
+    position:fixed;
+    left:0;
+    bottom:-100px;
+    width:100%;
+}
+.smiley{
+    width:25px;
+    cursor:pointer;
+}
+
+/*----------- MEDIA QUERIES -------*/
+@media screen and (max-width:768px){
+    .principal{
+        max-height:30vh;
+        min-height:20vh;
+    }
+}

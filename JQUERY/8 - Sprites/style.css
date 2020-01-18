@@ -1,0 +1,39 @@
+#perso{
+    width: 50px;
+    height: 50px;
+    background: url(zelda.png) no-repeat;
+    background-position-y:-150px;
+    animation: anime 0.7s steps(3) infinite;
+}
+
+
+#megaman{
+    width: 160px;
+    height: 220px;
+    background: url(megaman.png) no-repeat;
+    /* background-position-y:px; */
+    background-position-x: -240px;
+    animation: anime2 1.5s steps(9) infinite;
+}
+
+
+@keyframes anime2{
+    0%{
+        background-position-x: -240px;
+    }
+    100%{
+        background-position-x: -1500px;
+    }
+
+}
+
+
+@keyframes anime{
+    0%{
+        background-position-x: 0;
+    }
+    100%{
+        background-position-x: -150px;
+    }
+}
+

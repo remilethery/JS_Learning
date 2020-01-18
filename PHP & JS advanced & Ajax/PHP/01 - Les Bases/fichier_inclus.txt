@@ -1,0 +1,5 @@
+Salut les Potes !
+<?php
+    echo date("Y");
+    // Le code PHP sera interprété dans les includes
+?>

@@ -1,0 +1,27 @@
+.div1{
+    width: 300px;
+    height: 300px;
+    background: chocolate;
+}
+
+
+.div2{
+    border: 10px solid black;
+    /* Pour faire une ombre : */
+    box-shadow: 0 0 10px 10px rgba(0,0,0,0.3);
+    background: powderblue;
+}
+
+#popup{
+    position: fixed;
+    padding: 25px;
+    width:50vw;
+    background: blue;
+    top: 40%;
+    left: 25vw;
+    color:white;
+    font-size:4em;
+    text-align:center;
+    display:none;
+}
+

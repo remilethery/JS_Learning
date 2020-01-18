@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <h1 id='titre'>DOM Évènements</h1>
+
+    <div id="div1" class="carre bleu"></div>
+    <div id="div2" class="carre rouge"></div>
+    <div id="div3" class="carre jaune"></div>
+    <div id="div4" class="carre vert"></div>
+
+    <form action="" method="POST" id="formulaire">
+        <div>
+            <!-- for = binding avec l'id de l'input et le curseur se place sur l'input relié -->
+            <label for="pseudo">Pseudo</label>
+            <!-- name est l'index utilisé en PHP -->
+            <!-- autocomplete="off" Permet d'éviter l'autosaisie des champs -->
+            <input type="text" id="pseudo" name="pseudo" >
+        </div>
+        
+        <div>
+            <!-- for = binding avec l'id de l'input et le curseur se place sur l'input relié -->
+            <label for="mdp">MDP</label>
+            <!-- name est l'index utilisé en PHP -->
+            <!-- autocomplete="off" Permet d'éviter l'autosaisie des champs -->
+            <input type="password" id="mdp" name="mdp" >
+            <button type="button" id="voir">&#128065</button>
+        </div>
+
+        <input type="button" value="Valider">
+
+    </form>
+
+</body>
+</html>

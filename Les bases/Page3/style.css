@@ -1,0 +1,17 @@
+.carre {
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+}
+
+
+.bleu {background: blue;}
+.vert {background: green;}
+.rouge {background: red;}
+.violet {background: plum;}
+.jaune {background: yellow;}
+
+button {
+    font-size: 1rem;
+}
+

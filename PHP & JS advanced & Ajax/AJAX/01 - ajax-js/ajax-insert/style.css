@@ -1,0 +1,18 @@
+table{
+    border-collapse: collapse;
+}
+td, td{
+    border: 1px solid maroon;
+    padding: 4px;
+    min-width: 100px;
+}
+td span {
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+th {
+    background: royalblue;
+    color: whitesmoke;
+    border: 1px solid maroon;
+}

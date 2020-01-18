@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css?family=Rubik&display=swap');
+
+body{
+    /* Pour supprimer les margins et paddings de base des navigateurs */
+    margin: 0;
+    padding:0;
+    font-family: 'Rubik', sans-serif;
+}
+
+header, footer{
+    background: black;
+    color:white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+h1 {
+    margin-left: 30px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+h1 img{
+    width: 75px;
+    height: 75px;
+
+}
+
+h1 a{
+    color:cornflowerblue;
+}
+h2{
+    text-align: center;
+}
+#retourTop{
+    cursor: pointer;
+    width: 45px;
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    display: none;
+    margin-right:15px;
+}
+#retourTop img{
+    width: 45px;
+}
+
+
+/*
+nav{
+    
+}
+*/
+main{
+    min-height: calc(100vh - 200px);
+}
+
+ul{
+    display: flex;
+    list-style:none;
+    margin-right: 30px;
+    /* Position Z - comme les calques */
+    z-index:15;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+ul li {
+    padding-left:30px;
+}
+
+a{
+    color:white;
+    text-decoration: none;
+    transition:0.5s;
+}
+
+a:hover{
+    color: cadetblue;
+}
+
+#burger{
+    width: 40px;
+    line-height: 40px;
+    border: 1px solid white;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    text-align: center;
+    cursor: pointer;
+    display:none;
+    margin-right:20px;
+}
+
+video{
+    position: fixed;
+    top:0;
+    left:0;
+    opacity: 0.5;
+    filter:blur(1px);
+    /* On change la position de profondeur : minimum -1 */
+    z-index: -99;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.conteneur, .conteneurlarge{
+    /* rgba : a = opacité */
+    background: rgba(189, 194, 199, 0.6);
+    color: peachpuff;
+
+}
+
+.conteneur{
+    max-width: 1200px;
+    margin:0 auto;
+}
+
+.carrousel{
+    position:relative;
+    margin: 50px auto 0;
+    width: 960px;
+    height: 540px;
+    border: 10px solid rgb(88, 69, 44);
+    box-shadow: 0 0 10px 10px rgba(207, 62, 25, 0.747);
+    overflow: hidden;
+}
+
+.reglette{
+    position:relative;
+    top:0;
+    left:0;
+    height: 100%;
+    display: flex;
+}
+
+.reglette img{
+    height:100%; 
+}
+
+.left, .right{
+    width: 40px;
+    line-height: 40px;
+    font-size: 1.5rem;
+    position: absolute;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    text-align: center;
+    transition:1s;
+}
+
+.left:hover, .right:hover{
+    background: rgb(255, 255, 255);
+}
+
+.left{
+    top:45%;
+    left:10px;
+}
+.right{
+    top:45%;
+    right:10px;
+}
+
+p{
+    padding: 0 25px;
+    text-align: justify;
+}
+
+/* ------------------ MEDIA QUERIES (à la fin du fichier) ---------------- */
+@media screen and (max-width:1080px){
+    .carrousel{
+        width: 80vw;
+        height: calc(80vw * 9 / 16); /* ratio 16/9 */
+    }
+}
+
+
+@media screen and (max-width:768px){
+    #burger{
+        display:block;
+    }
+    ul{
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        left: 0;
+        top:120px;
+        background:black;
+        /* Bien laisser un espace pour que le calcul se fasse, sinon erreur de compil */
+        width: calc(100% - 40px);
+        margin:0;
+    }
+    ul li {
+        margin-left:-40px;
+        padding:0;
+        height: 30px;
+    }
+
+
+}
+
+
+/* p.para => Je sélectionne le p qui a la classe para */
+/* p .para => Je sélectionne tous les éléments 
+                enfants de p qui ont la classe para */

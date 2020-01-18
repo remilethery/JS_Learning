@@ -1,0 +1,45 @@
+main{
+    min-height: calc(100vh - 159px);
+}
+
+.principal{
+    min-height: 55vh;
+    max-height: 55vh;
+}
+#formulaire_chat .btn{
+    min-width: 40%;
+}
+.avatar {
+    width: 60px;
+}
+#currentAvatar{
+    width: 60px;
+}
+
+#message_chat, #liste_membre_connecte{
+    overflow-y:auto;
+    overflow-x:none;
+}
+#message_chat p{
+    margin:0;
+}
+.cookies{
+    position: fixed;
+    left: 0;
+    bottom: -100px;
+    width: 100%;
+}
+#profil{
+    color: royalblue;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+/********************      MEDIA QUERIES      ********************/
+
+@media screen and (max-width:768px) {
+    .principal{
+        max-height: 30vh;
+        min-height: 20vh;
+    }
+}

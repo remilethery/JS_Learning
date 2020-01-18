@@ -1,0 +1,19 @@
+#pays{
+    position:relative;
+}
+#resultats{
+    position:absolute;
+    min-width:300px;
+    background:lightgray;
+    color:black;
+    font-size:1.4rem;
+    padding:0;
+    margin:0;
+    flex-direction:column;
+    display:none;
+}
+#resultats p{
+    padding:0 0 0 10px;
+    line-height:30px;
+    margin:0;
+}
